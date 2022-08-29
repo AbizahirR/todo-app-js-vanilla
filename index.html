@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Todo List App developed with Vanilla JavaScript + Vite">
+
     <title>TodoApp - JS Vanilla</title>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
     
@@ -14,7 +16,7 @@
 		<section class="todoapp">
 			<header class="header">
 				<h1>Todos</h1>
-				<input class="new-todo" placeholder="What needs to be done?" autofocus>
+				<input aria-label="Input to Add new TODO" class="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
 
 			<section class="main">
@@ -33,17 +35,17 @@
 
 				<ul class="filters">
 					<li>
-						<a id="all" href="#/">All</a>
+						<a id="all" aria-label="Show all TODOS" href="#/">All</a>
 					</li>
 					<li>
-						<a id="active" href="#/active">Active</a>
+						<a id="active" aria-label="Show uncompleted TODOS" href="#/active">Active</a>
 					</li>
 					<li>
-						<a id="completed" href="#/completed">Completed</a>
+						<a id="completed" aria-label="Show completed TODOS" href="#/completed">Completed</a>
 					</li>
 				</ul>
 
-				<button class="clear-completed"></button>
+				<button type="button" aria-label="Clear completed TODOS" class="clear-completed"></button>
 			</footer>
 		</section>
 
